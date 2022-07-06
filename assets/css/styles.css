@@ -1,0 +1,130 @@
+/* ---------- General Styles ---------- */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Sora', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- NAV ---------- */
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+  margin-right: 60px;
+}
+
+.menu-div>ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 25px;
+}
+
+.menu-div>ul>li>p {
+  color: #808080;
+  font-size: 15px;
+}
+
+.cart-profile-div>ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.avatar {
+  width: 50px;
+}
+
+header>hr {
+  border: 0.5px solid rgb(226, 226, 226);
+}
+
+/* ---------- Main ---------- */
+
+main {
+  padding-top: 50px;
+  margin: 50px;
+  display: flex;
+}
+
+/* ---------- Image Section ---------- */
+.sneaker-images-section {
+  max-width: 600px;
+  margin: 0;
+}
+
+.main-sneaker-img-div img {
+  width: 600px;
+  border-radius: 15px;
+}
+
+.preview-sneaker-img-div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview-sneaker-img-div img {
+  border-radius: 15px;
+  width: 120px;
+}
+
+/* ---------- Sneaker Details Section (Text) ---------- */
+.sneaker-details-section {
+  margin-left: 120px;
+  max-width: 600px;
+}
+
+.sneaker-details-text-div h3 {
+  margin-top: 60px;
+  color: orange;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.sneaker-details-text-div h1 {
+  margin-top: 0;
+  font-size: 2.4rem;
+}
+
+.sneaker-details-text-div p {
+  font-size: 1rem;
+  color: #808080;
+}
+
+/* ---------- Copyright ---------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
