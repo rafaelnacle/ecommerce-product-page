@@ -1,9 +1,15 @@
 /* ---------- General Styles ---------- */
+:root {
+  --primary: #ff7d1b;
+  --secondary-text: #6d6d6d;
+}
+
 
 body,
 html {
   margin: 0;
   padding: 0;
+  background: #ffffff;
 }
 
 h1,
@@ -35,7 +41,7 @@ a {
 }
 
 .logo {
-  height: 30px;
+  height: 25px;
   width: auto;
   margin-right: 60px;
 }
@@ -47,7 +53,7 @@ a {
 }
 
 .menu-div>ul>li>p {
-  color: #808080;
+  color: var(--secondary-text);
   font-size: 15px;
 }
 
@@ -76,12 +82,12 @@ main {
 
 /* ---------- Image Section ---------- */
 .sneaker-images-section {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0;
 }
 
 .main-sneaker-img-div img {
-  width: 600px;
+  width: 500px;
   border-radius: 15px;
 }
 
@@ -99,12 +105,12 @@ main {
 /* ---------- Sneaker Details Section (Text) ---------- */
 .sneaker-details-section {
   margin-left: 120px;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .sneaker-details-text-div h3 {
   margin-top: 60px;
-  color: orange;
+  color: var(--primary);
   text-transform: uppercase;
   font-size: 1rem;
 }
@@ -116,11 +122,96 @@ main {
 
 .sneaker-details-text-div p {
   font-size: 1rem;
-  color: #808080;
+  color: var(--secondary-text);
+}
+
+.current-price {
+  display: flex;
+  align-items: center;
+}
+
+.current-price h1 {
+  margin-right: 20px;
+  font-size: 32px;
+}
+
+.discount-card {
+  display: flex;
+  text-align: center;
+  line-height: 30px;
+}
+
+.discount-card h3 {
+  background-color: rgb(255, 236, 202);
+  border-radius: 5px;
+  color: var(--primary);
+  height: 30px;
+  width: 50px;
+  padding: 2px;
+
+}
+
+.old-price h4 {
+  margin-top: -10px;
+  color: #D3D3D3;
+  text-decoration: line-through;
+}
+
+/* ---------- Sneaker Details Section (Buttons) ---------- */
+
+.buttons-div {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.quantity-selector-card {
+  background: #f7f8fd;
+  border-radius: 10px;
+  width: 240px;
+  font-size: 20px;
+}
+
+.quantity-selector-card>ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.quantity-selector-card>ul button {
+  background: none;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-to-cart-div {
+  width: 100%;
+}
+
+.add-to-cart-div>button {
+  background: var(--primary);
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  width: 100%;
+  color: white;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.add-to-cart-div img {
+  filter: brightness(3);
+  margin-right: 10px;
 }
 
 /* ---------- Copyright ---------- */
 .attribution {
+  margin-top: 100px;
   font-size: 11px;
   text-align: center;
 }
