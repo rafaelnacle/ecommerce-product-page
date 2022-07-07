@@ -55,6 +55,12 @@ a {
 .menu-div>ul>li>p {
   color: var(--secondary-text);
   font-size: 15px;
+  cursor: pointer;
+}
+
+.menu-div>ul>li>p:hover {
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: 10px;
 }
 
 .cart-profile-div>ul {
@@ -66,6 +72,7 @@ a {
 
 .avatar {
   width: 50px;
+  cursor: pointer;
 }
 
 header>hr {
@@ -242,6 +249,96 @@ main {
 .add-to-cart-div img {
   filter: brightness(3);
   margin-right: 10px;
+}
+
+/* ---------- Cart Card (On click)---------- */
+.cart-li {
+  position: relative;
+}
+
+.cart-card {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.144);
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  position: absolute;
+  left: -150px;
+  top: 40px;
+  justify-content: space-between;
+}
+
+.active {
+  display: none !important;
+}
+
+
+.cart-card section {
+  width: 100%;
+}
+
+.cart-card-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.cart-card-inner-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-card-text-div p {
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: var(--secondary-text);
+}
+
+.cart-card-text-div b {
+  color: rgb(43, 42, 42);
+}
+
+.empty-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.thumbnail-cart-card {
+  height: 80px;
+  border-radius: 10px;
+}
+
+.checkout-button {
+  background: var(--primary);
+  border: none;
+  border-radius: 10px;
+  height: 60px;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.checkout-button:hover {
+  background: #ec7419;
+}
+
+.trash-icon {
+  height: 16px;
+}
+
+.trash-icon:hover {
+  opacity: 0.6;
 }
 
 /* ---------- Copyright ---------- */
