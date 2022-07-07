@@ -20,7 +20,30 @@
   <div class="container">
     <header>
       <nav class="menu-nav">
+        <div class="menu-mobile">
+          <aside class="menu-mobile-aside">
+            <ul>
+              <li>
+                <p>Collections</p>
+              </li>
+              <li>
+                <p>Men</p>
+              </li>
+              <li>
+                <p>Women</p>
+              </li>
+              <li>
+                <p>About</p>
+              </li>
+              <li>
+                <p>Contact</p>
+              </li>
+            </ul>
+          </aside>
+          <img src="./images/icon-menu.svg" alt="Hamburger Menu">
+        </div>
         <div class="menu-div">
+
           <img class="logo" src="./images/logo.svg" alt="Sneakers Logo">
           <ul>
             <li>
@@ -40,6 +63,7 @@
             </li>
           </ul>
         </div>
+
         <div class="cart-profile-div">
           <ul>
             <li class="cart-li">
@@ -89,12 +113,73 @@
           <img src="./images/image-product-1.jpg" alt="Main sneaker image">
         </div>
         <div class="preview-sneaker-img-div">
-          <img src="./images/image-product-1-thumbnail.jpg" alt="Small sneaker preview images">
-          <img src="./images/image-product-2-thumbnail.jpg" alt="Small sneaker preview images">
-          <img src="./images/image-product-3-thumbnail.jpg" alt="Small sneaker preview images">
-          <img src="./images/image-product-4-thumbnail.jpg" alt="Small sneaker preview images">
+          <img onclick="openModal();currentSlide(1)" class="hover-shadow" src="./images/image-product-1-thumbnail.jpg"
+            alt="Small sneaker preview images">
+          <img onclick="openModal();currentSlide(1)" class="hover-shadow" src="./images/image-product-2-thumbnail.jpg"
+            alt="Small sneaker preview images">
+          <img onclick="openModal();currentSlide(1)" class="hover-shadow" src="./images/image-product-3-thumbnail.jpg"
+            alt="Small sneaker preview images">
+          <img onclick="openModal();currentSlide(1)" class="hover-shadow" src="./images/image-product-4-thumbnail.jpg"
+            alt="Small sneaker preview images">
         </div>
       </section>
+
+      <!-- Image lightbox modal -->
+      <section>
+        <div id="modal" class="modal">
+          <span class="close cursor" onclick="closeModal()">
+            <img src="./images/icon-close.svg" alt="Close button" />
+          </span>
+          <div class="modal-content">
+            <div class="slides">
+              <!-- <div class="img-number">1 / 4</div> -->
+              <img src="./images/image-product-1.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+              <!-- <div class="img-number">1 / 4</div> -->
+              <img src="./images/image-product-2.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+              <!-- <div class="img-number">1 / 4</div> -->
+              <img src="./images/image-product-3.jpg" style="width:100%">
+            </div>
+            <div class="slides">
+              <!-- <div class="img-number">1 / 4</div> -->
+              <img src="./images/image-product-4.jpg" style="width:100%">
+            </div>
+
+            <!-- Next & previous -->
+            <a class="prev" onclick="plusSlides(-1)"><img src="./images/icon-previous.svg" alt="previous"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="./images/icon-next.svg" alt="next"></a>
+
+
+            <!-- Thumbnail image controls -->
+            <div class="preview-column">
+              <div class="column">
+                <img class="thumbnail" src="images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)"
+                  alt="Sneaker">
+              </div>
+
+              <div class="column">
+                <img class="thumbnail" src="images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)"
+                  alt="Sneaker">
+              </div>
+
+              <div class="column">
+                <img class="thumbnail" src="images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)"
+                  alt="Sneaker">
+              </div>
+
+              <div class="column">
+                <img class="thumbnail" src="images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)"
+                  alt="Sneaker">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Image lightbox modal -->
       <section class="sneaker-details-section">
         <div class="sneaker-details-text-div">
           <h3>Sneaker Company</h3>
@@ -155,7 +240,9 @@
     </div>
   </div>
 
+
   <script src="./assets/scripts/scripts.js"></script>
+  <script src="./assets/scripts/imagePreview.js"></script>
 </body>
 
 </html>

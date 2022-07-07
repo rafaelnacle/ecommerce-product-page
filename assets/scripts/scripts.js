@@ -67,5 +67,3 @@ deleteItemFromCart.addEventListener('click', () => {
 })
 
 
-
-
