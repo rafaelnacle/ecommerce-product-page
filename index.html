@@ -42,8 +42,15 @@
         </div>
         <div class="cart-profile-div">
           <ul>
-            <li><img src="./images/icon-cart.svg" alt="Cart Icon"></li>
-            <li><img class="avatar" src="./images/image-avatar.png" alt="Avatar"></li>
+            <li class="cart-li">
+              <div class="cart-item" id="cart-item-quantity">
+                <p id="cart-item-value">0</p>
+              </div>
+              <img id="cart" src="./images/icon-cart.svg" alt="Cart Icon">
+            </li>
+            <li>
+              <img class="avatar" src="./images/image-avatar.png" alt="Avatar">
+            </li>
           </ul>
         </div>
       </nav>
@@ -88,23 +95,23 @@
           <div class="quantity-selector-card">
             <ul>
               <li>
-                <button>
-                  <img src="./images/icon-minus.svg" alt="Minus">
+                <button id="minus-button">
+                  <img src="./images/icon-minus.svg" alt="Minus Icon">
                 </button>
               </li>
               <li>
-                <p>0</p>
+                <p id="item-quantity">0</p>
               </li>
               <li>
-                <button>
-                  <img src="./images/icon-plus.svg" alt="Plus">
+                <button id="plus-button">
+                  <img src="./images/icon-plus.svg" alt="Plus Icon">
                 </button>
               </li>
             </ul>
           </div>
           <div class="add-to-cart-div">
-            <button type="button">
-              <img src="./images/icon-cart.svg" alt="">
+            <button id="add-to-cart-button" type="button">
+              <img src="./images/icon-cart.svg" alt="Cart Icon">
               Add to cart
             </button>
           </div>
@@ -120,6 +127,8 @@
       Coded by <a href="https://www.linkedin.com/in/rafael-nacle/" target="_blank">Rafael Nacle</a>.
     </div>
   </div>
+
+  <script src="./assets/scripts/scripts.js"></script>
 </body>
 
 </html>

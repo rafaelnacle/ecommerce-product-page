@@ -72,6 +72,31 @@ header>hr {
   border: 0.5px solid rgb(226, 226, 226);
 }
 
+.cart-li {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-item {
+  background-color: #ec7419;
+  width: 21px;
+  height: 16px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  bottom: 16px;
+  display: none;
+}
+
+.cart-item>p {
+  font-size: 0.7rem;
+  color: white;
+
+}
+
 /* ---------- Main ---------- */
 
 main {
@@ -189,6 +214,11 @@ main {
   width: 100%;
 }
 
+.quantity-selector-card>ul button:hover {
+  background: #eeeff3;
+  border-radius: 10px;
+}
+
 .add-to-cart-div {
   width: 100%;
 }
@@ -202,6 +232,11 @@ main {
   color: white;
   margin-left: 20px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.add-to-cart-div>button:hover {
+  background: #ec7419;
 }
 
 .add-to-cart-div img {
