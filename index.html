@@ -113,6 +113,29 @@
     </header>
     <main>
       <section class="sneaker-images-section">
+        <div class="main-sneaker-img-div-mobile">
+          <div class="mobileSlides fade">
+            <img src="./images/image-product-1.jpg" style="width:100%" alt="Main sneaker image">
+          </div>
+
+          <div class="mobileSlides fade">
+            <img src="./images/image-product-2.jpg" style="width:100%">
+          </div>
+
+          <div class="mobileSlides fade">
+            <img src="./images/image-product-3.jpg" style="width:100%">
+          </div>
+
+          <div class="mobileSlides fade">
+            <img src="./images/image-product-4.jpg" style="width:100%">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prevMobile" onclick="plusMobileSlides(-1)">&#10094;</a>
+          <a class="nextMobile" onclick="plusMobileSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
         <div class="main-sneaker-img-div">
           <img src="./images/image-product-1.jpg" alt="Main sneaker image">
         </div>
@@ -245,9 +268,10 @@
   </div>
 
 
+  <script src="./assets/scripts/imagePreview.js"></script>
+  <script src="./assets/scripts/imageSlideMobile.js"></script>
   <script src="./assets/scripts/asideMenu.js"></script>
   <script src="./assets/scripts/scripts.js"></script>
-  <script src="./assets/scripts/imagePreview.js"></script>
 </body>
 
 </html>

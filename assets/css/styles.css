@@ -133,6 +133,10 @@ main {
   border-radius: 15px;
 }
 
+.main-sneaker-img-div-mobile img {
+  display: none;
+}
+
 .preview-sneaker-img-div {
   margin-top: 20px;
   display: flex;
@@ -447,6 +451,14 @@ main {
   filter: drop-shadow(2px 4px 6px black);
 }
 
+.prevMobile {
+  display: none;
+}
+
+.nextMobile {
+  display: none;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -583,13 +595,20 @@ img.hover-shadow {
     padding: 0;
   }
 
+
+
   .main-sneaker-img-div img {
+    display: none;
+  }
+
+  .main-sneaker-img-div-mobile img {
     width: 100%;
     height: 330px;
     padding: 0;
     margin: 0;
     border-radius: 0;
     object-fit: cover;
+    display: flex;
   }
 
   .preview-sneaker-img-div {
@@ -657,5 +676,87 @@ img.hover-shadow {
   .attribution {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+
+
+  /* MOBILE SLIDE */
+  /* Slideshow container */
+  .main-sneaker-img-div-mobile {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mobileSlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prevMobile,
+  .nextMobile {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 16px;
+    margin: 15px;
+    margin-top: -50px;
+    transition: 0.6s ease;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  /* Position the "next button" to the right */
+  .nextMobile {
+    right: 0;
+    border-radius: 100%;
+    display: flex;
+
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
   }
 }
