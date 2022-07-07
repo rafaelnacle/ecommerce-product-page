@@ -52,7 +52,7 @@ addToCartButton.addEventListener('click', () => {
 })
 
 // Check if the cart is empty, if it is add the item div, else remove it.
-const handleCartValue = () => {
+const handleCartValue = (event) => {
   cartCard.classList.toggle('active')
   cartCardDiv.classList.toggle('active')
   cartItemValue.innerHTML > 0
@@ -64,6 +64,9 @@ cartIcon.addEventListener('click', handleCartValue)
 deleteItemFromCart.addEventListener('click', () => {
   emptyCartDiv.classList.toggle('active')
   cartCardDiv.classList.toggle('active')
+
+  cartItemValue.innerHTML = 0;
+  cartItem.innerHTML = 0;
 })
 
 
