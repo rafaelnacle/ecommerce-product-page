@@ -1,13 +1,13 @@
 let slideMobileIndex = 1;
-showSlides(slideMobileIndex);
+showSlidesMobile(slideMobileIndex);
 
 // Next/previous controls
 function plusMobileSlides(n) {
-  showSlides(slideMobileIndex += n);
+  showSlidesMobile(slideMobileIndex += n);
 }
 
 
-function showSlides(n) {
+function showSlidesMobile(n) {
   let i;
   let slides = document.getElementsByClassName("mobileSlides");
   if (n > slides.length) { slideMobileIndex = 1 }

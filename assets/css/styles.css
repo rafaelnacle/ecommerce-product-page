@@ -587,6 +587,7 @@ img.hover-shadow {
     width: 360px;
     left: -315px;
     top: 80px;
+    z-index: 5;
   }
 
   main {
