@@ -60,10 +60,12 @@ a {
   gap: 25px;
 }
 
-.menu-div>ul>li>p {
+.menu-div>ul>li>a {
   color: var(--secondary-text);
   font-size: 15px;
   cursor: pointer;
+  text-decoration: none;
+
 }
 
 .menu-div>ul>li>p:hover {
@@ -482,6 +484,8 @@ img.hover-shadow {
   color: hsl(228, 45%, 44%);
 }
 
+
+/* ------------ MOBILE SETTINGS ------------  */
 @media screen and (max-width: 600px) {
   /* .container {
     max-width: 600px;
@@ -494,6 +498,7 @@ img.hover-shadow {
   .menu-nav {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
   }
 
   .menu-div ul {
@@ -502,10 +507,8 @@ img.hover-shadow {
 
   .menu-mobile {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-left: 20px;
-    height: 80px;
   }
 
   .menu-mobile img {
@@ -513,8 +516,40 @@ img.hover-shadow {
     height: 18px;
   }
 
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidebar img {
+    padding: 20px;
+    filter: grayscale(3);
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar li {
+    padding: 20px;
+  }
+
+  .sidebar a {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
   .logo {
     margin: 0;
+    margin-left: -50px;
   }
 
   .cart-profile-div {
@@ -524,6 +559,7 @@ img.hover-shadow {
 
   .cart-profile-div ul {
     padding: 0;
+    gap: 20px;
   }
 
   .avatar {
@@ -537,7 +573,7 @@ img.hover-shadow {
 
   .cart-card {
     width: 360px;
-    left: -270px;
+    left: -315px;
     top: 80px;
   }
 
@@ -549,9 +585,11 @@ img.hover-shadow {
 
   .main-sneaker-img-div img {
     width: 100%;
+    height: 330px;
     padding: 0;
     margin: 0;
     border-radius: 0;
+    object-fit: cover;
   }
 
   .preview-sneaker-img-div {
@@ -565,21 +603,28 @@ img.hover-shadow {
 
   .sneaker-details-text-div h3 {
     margin-top: 0;
+    font-size: 0.9rem;
   }
 
   .sneaker-details-text-div h1 {
     font-size: 2rem;
+    margin-bottom: 10px;
   }
 
   .sneaker-details-text-div p {
     font-size: 1rem;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
+    margin: 0;
   }
 
   .sneaker-main-price-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .current-price h1 {
+    font-size: 2rem;
   }
 
   .old-price h4 {
@@ -607,5 +652,10 @@ img.hover-shadow {
 
   #add-to-cart-button {
     margin: 0;
+  }
+
+  .attribution {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }

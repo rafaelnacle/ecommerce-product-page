@@ -21,45 +21,49 @@
     <header>
       <nav class="menu-nav">
         <div class="menu-mobile">
-          <aside class="menu-mobile-aside">
+          <aside id="sidebar" class="sidebar">
+            <img class="closebtn" onclick="closeNav()" src="./images/icon-close.svg" alt="">
             <ul>
               <li>
-                <p>Collections</p>
+                <a>Collections</a>
               </li>
               <li>
-                <p>Men</p>
+                <a>Men</a>
               </li>
               <li>
-                <p>Women</p>
+                <a>Women</a>
               </li>
               <li>
-                <p>About</p>
+                <a>About</a>
               </li>
               <li>
-                <p>Contact</p>
+                <a>Contact</a>
               </li>
             </ul>
           </aside>
-          <img src="./images/icon-menu.svg" alt="Hamburger Menu">
+          <div class="main">
+            <img class="openbtn" onclick="openNav()" src="./images/icon-menu.svg" alt="Hamburger Menu">
+          </div>
+
         </div>
         <div class="menu-div">
 
-          <img class="logo" src="./images/logo.svg" alt="Sneakers Logo">
+          <a href="#"><img class="logo" src="./images/logo.svg" alt="Sneakers Logo"></a>
           <ul>
             <li>
-              <p>Collections</p>
+              <a href="#">Collections</a>
             </li>
             <li>
-              <p>Men</p>
+              <a href="#">Men</a>
             </li>
             <li>
-              <p>Women</p>
+              <a href="#">Women</a>
             </li>
             <li>
-              <p>About</p>
+              <a href="#">About</a>
             </li>
             <li>
-              <p>Contact</p>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -241,6 +245,7 @@
   </div>
 
 
+  <script src="./assets/scripts/asideMenu.js"></script>
   <script src="./assets/scripts/scripts.js"></script>
   <script src="./assets/scripts/imagePreview.js"></script>
 </body>
